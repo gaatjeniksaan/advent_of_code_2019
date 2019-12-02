@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gaatjeniksaan/advent_of_code_2019/helpers"
+	"github.com/gaatjeniksaan/advent_of_code_2019/helpers/helpers"
 	"io/ioutil"
 )
 
