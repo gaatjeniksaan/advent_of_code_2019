@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/gaatjeniksaan/advent_of_code_2019/day1/utils"
 	"os"
 	"strconv"
 )

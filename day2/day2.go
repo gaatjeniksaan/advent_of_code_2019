@@ -8,6 +8,6 @@ import (
 
 func main() {
 	file, err := ioutil.ReadFile("./input.txt")
-	helpers.check(err)
+	helpers.Check(err)
 	fmt.Println("hoi")
 }

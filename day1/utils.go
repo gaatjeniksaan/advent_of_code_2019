@@ -1,4 +1,4 @@
-package utils
+package main
 
 func calculateFuel(mass int) int {
 	fuel := (mass / 3) - 2
