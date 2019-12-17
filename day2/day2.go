@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/gaatjeniksaan/advent_of_code_2019/helpers"
 	"io/ioutil"
 	"strconv"
 	"strings"
@@ -73,14 +72,16 @@ func part2(rawInput []int) int {
 
 func readInput() []int {
 	file, err := ioutil.ReadFile("./input.txt")
-	helpers.Check(err)
+	if err != nil {
+		panic(err.Error())
+	}
 	rawInput := strings.Split(string(file), ",")
 	input := make([]int, len(rawInput))
 	// Convert str input to integers
 	for i := range rawInput {
 		input[i], err = strconv.Atoi(rawInput[i])
 		if err != nil {
-			helpers.Check(err)
+			panic(err.Error())
 		}
 	}
 
